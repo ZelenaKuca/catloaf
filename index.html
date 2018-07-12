@@ -1,37 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Catloaf</title>
-	<style type="text/css">
-		h1 {
-			text-align: center;
-			color: white;
-		}
-		body {
-			background: teal;
-			background-image: url("catloaf.png");
-			background-size: 50px;
-		}
-		img {
-			margin-left: 20px;
-			width: 200px;
-		}
-	</style>
+    <title>Catloaf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+    h1 {
+        text-align: center;
+        color: white;
+    }
+
+    body {
+        background: teal;
+        /*background-image: url("catloaf.png");*/
+        background-size: 50px;
+    }
+
+    img {
+        margin-left: 20px;
+        width: 200px;
+    }
+
+    .accordion {
+        transition: 0.4s;
+    }
+
+    .active,
+    .accordion:hover {
+        cursor: pointer;
+    }
+
+    .panel {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        color: white;
+    }
+    </style>
 </head>
+
 <body>
-  <h1>Кетлоаф</h1>
- 
-  <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png" title="catloaf"></a>
-  <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png"></a>
-  <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png"></a>
-  <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png"></a>
-  <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png"></a>
-  <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png"></a>
-  <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png"></a>
-  <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png"></a>
-  <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png"></a>
-  <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png"></a>
-  <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png"></a>
-  <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png"></a>
+    <h1 class="accordion">Кетлоаф</h1>
+    <div class="panel">
+        <p>A Catloaf is when a cat sits in the shape of a loaf of bread. More specifically, laying with all four paws tucked under the body. The cat can either be sitting alone, or in a rectangular shaped box, like a shoebox. The cat may also have one paw sticking out, known commonly as the pop-thermometer, or also known as Catloaf on a stick. The Catloaf is not to be mistaken for a monorail, which is similar, except that the cat's head would be laying down, chin on floor.
+            <br>*My cat is sitting with all four paws under his body, he is Catloafing.
+            <br>*My cat is sitting Catloaf style, with all four paws under his body. </p>
+    </div>
+    <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png" title="catloaf"></a>
+    <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png" title="catloaf"></a>
+    <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png" title="catloaf"></a>
+    <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png" title="catloaf"></a>
+    <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png" title="catloaf"></a>
+    <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png" title="catloaf"></a>
+    <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png" title="catloaf"></a>
+    <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png" title="catloaf"></a>
+    <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png" title="catloaf"></a>
+    <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png" title="catloaf"></a>
+    <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png" title="catloaf"></a>
+    <a href="https://www.google.rs/search?q=catloaf&source=lnms&tbm=isch"> <img src="catloaf.png" title="catloaf"></a>
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+    </script>
 </body>
+
 </html>
